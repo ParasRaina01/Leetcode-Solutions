@@ -27,10 +27,7 @@ public:
         
     }
     int longestZigZag(TreeNode* root) {
-        if(!root->left && !root->right)
-            return 0;
         dfs(root,0,0);
-        dfs(root,1,0);
         return ans;
     }
 };
